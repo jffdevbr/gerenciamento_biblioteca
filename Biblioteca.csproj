@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2066F548-6403-4842-B5B0-3212F5489947}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Biblioteca</RootNamespace>
+    <AssemblyName>Biblioteca</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BibliotecaDados.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BibliotecaDados.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BibliotecaDataLeitor.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BibliotecaDataLeitor.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BibliotecaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BibliotecaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="pgCRUDReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pgCRUDReserva.Designer.cs">
+      <DependentUpon>pgCRUDReserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pgPainelEmprestimos_VWLeitores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pgPainelEmprestimos_VWLeitores.Designer.cs">
+      <DependentUpon>pgPainelEmprestimos_VWLeitores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pgPainelReservas_VWLeitores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pgPainelReservas_VWLeitores.Designer.cs">
+      <DependentUpon>pgPainelReservas_VWLeitores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pgCRUDLivros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pgCRUDLivros.Designer.cs">
+      <DependentUpon>pgCRUDLivros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PainelLeitores.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PainelLeitores.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="pgInicialLeitores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pgInicialLeitores.Designer.cs">
+      <DependentUpon>pgInicialLeitores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pgInicialADM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pgInicialADM.Designer.cs">
+      <DependentUpon>pgInicialADM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pgPainelEmprestimos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pgPainelEmprestimos.Designer.cs">
+      <DependentUpon>pgPainelEmprestimos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pgCRUDEmprestimo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pgCRUDEmprestimo.Designer.cs">
+      <DependentUpon>pgCRUDEmprestimo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pgPainelLivros_VWLeitores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pgPainelLivros_VWLeitores.Designer.cs">
+      <DependentUpon>pgPainelLivros_VWLeitores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pgCRUDLeitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pgCRUDLeitor.Designer.cs">
+      <DependentUpon>pgCRUDLeitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pgPainelLeitores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pgPainelLeitores.Designer.cs">
+      <DependentUpon>pgPainelLeitores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pgLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pgLogin.Designer.cs">
+      <DependentUpon>pgLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewPainelLeitor.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ViewPainelLeitor.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="pgCRUDEmprestimo.resx">
+      <DependentUpon>pgCRUDEmprestimo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pgCRUDLeitor.resx">
+      <DependentUpon>pgCRUDLeitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pgCRUDLivros.resx">
+      <DependentUpon>pgCRUDLivros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pgCRUDReserva.resx">
+      <DependentUpon>pgCRUDReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pgInicialLeitores.resx">
+      <DependentUpon>pgInicialLeitores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pgInicialADM.resx">
+      <DependentUpon>pgInicialADM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pgPainelEmprestimos.resx">
+      <DependentUpon>pgPainelEmprestimos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pgPainelEmprestimos_VWLeitores.resx">
+      <DependentUpon>pgPainelEmprestimos_VWLeitores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pgPainelLeitores.resx">
+      <DependentUpon>pgPainelLeitores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pgLogin.resx">
+      <DependentUpon>pgLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pgPainelLivros_VWLeitores.resx">
+      <DependentUpon>pgPainelLivros_VWLeitores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pgPainelReservas_VWLeitores.resx">
+      <DependentUpon>pgPainelReservas_VWLeitores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="BibliotecaDados.xsc">
+      <DependentUpon>BibliotecaDados.xsd</DependentUpon>
+    </None>
+    <None Include="BibliotecaDados.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BibliotecaDados.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BibliotecaDados.xss">
+      <DependentUpon>BibliotecaDados.xsd</DependentUpon>
+    </None>
+    <None Include="BibliotecaDataLeitor.xsc">
+      <DependentUpon>BibliotecaDataLeitor.xsd</DependentUpon>
+    </None>
+    <None Include="BibliotecaDataLeitor.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BibliotecaDataLeitor.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BibliotecaDataLeitor.xss">
+      <DependentUpon>BibliotecaDataLeitor.xsd</DependentUpon>
+    </None>
+    <None Include="BibliotecaDataSet.xsc">
+      <DependentUpon>BibliotecaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BibliotecaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BibliotecaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BibliotecaDataSet.xss">
+      <DependentUpon>BibliotecaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PainelLeitores.xsc">
+      <DependentUpon>PainelLeitores.xsd</DependentUpon>
+    </None>
+    <None Include="PainelLeitores.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PainelLeitores.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PainelLeitores.xss">
+      <DependentUpon>PainelLeitores.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="ViewPainelLeitor.xsc">
+      <DependentUpon>ViewPainelLeitor.xsd</DependentUpon>
+    </None>
+    <None Include="ViewPainelLeitor.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ViewPainelLeitor.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ViewPainelLeitor.xss">
+      <DependentUpon>ViewPainelLeitor.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgAdicionar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgAlterarDados.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgDevolucao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgEmprestimos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgExcluir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgLeitores.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgLivros.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgReservas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgSair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgVoltar.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
