@@ -1,5 +1,5 @@
 # gerenciamento_biblioteca
-<b>Trabalho escolar</b>
+<b>Trabalho escolar: </b>
 Este programa serve para gerenciar bibliotecas. Tanto os alunos, quanto bibliotecários podem acessar o sistema.
 Do lado dos alunos e professores, é possível visualizar os livros disponíveis e fazer uma reserva.
 O bibliotecário pode inserir, alterar ou excluir dados dos livros, leitores e empréstimos.
